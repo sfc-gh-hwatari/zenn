@@ -11,13 +11,12 @@ publication_name: "snowflakejp"
 著者はSnowflakeに所属しておりますが、本記事は個人の見解であり、所属する組織の公式見解ではありません。
 :::
 
-「紙の請求書をスキャンしたPDF、コーヒーこぼれてるし、ハンコかぶってるし、これ読めるの...？」
+2026年11月に、Snowflakeの[AI_EXTRACT](https://docs.snowflake.com/en/sql-reference/functions/ai_extract)関数へ精度改善と新機能がまとめて入りました。
+この記事では、その実力をわざと汚したスキャンPDFで確かめます。
 
-現場の書類って、だいたいこんな感じですよね。
-きれいなPDFで「読めました！」と言われても、正直あまり参考になりません。
-
-そこで今回は、わざと汚したスキャンPDFをSnowflakeの[AI_EXTRACT](https://docs.snowflake.com/en/sql-reference/functions/ai_extract)関数に読ませてみました。
-2026年11月のアップデートで入った、根拠の位置を返すcitationや、ページ指定のFL_FILTER_PAGESもあわせて試しています。
+実際の紙の書類には、シミや押印、手書きのメモが付きものです。
+デジタルで作ったきれいなPDFだけでは、業務で使えるかの判断材料になりにくいと考えました。
+あわせて、新機能のcitation（根拠の位置）とFL_FILTER_PAGES（ページ指定）も試しています。
 
 ## 1. はじめに
 
