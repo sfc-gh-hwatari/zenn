@@ -1,5 +1,5 @@
 ---
-title: "AI_EXTRACTのアップデート：精度改善・citation・FL_FILTER_PAGESをスキャンされた汚いPDFで試す"
+title: "Snowflake AI_EXTRACTの新機能を、わざと汚したPDFで検証（精度改善・citation・ページ指定）"
 emoji: "📄"
 type: "tech"
 topics: ["snowflake", "ai", "llm", "aisql", "ocr"]
