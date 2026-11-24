@@ -1,5 +1,5 @@
 ---
-title: "汚れたスキャンPDFでも読める？SnowflakeのAI_EXTRACT関数を11月アップデート後に試してみた"
+title: "Snowflake AI_EXTRACTのアップデート：精度改善・citation・FL_FILTER_PAGESを試す"
 emoji: "📄"
 type: "tech"
 topics: ["snowflake", "ai", "llm", "aisql", "ocr"]
