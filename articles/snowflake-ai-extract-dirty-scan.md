@@ -71,7 +71,7 @@ SQLの書き方を変える必要はありません。
 
 どの種類でも、AI_EXTRACTが最も高い精度でした。
 TextractとAzureは、APIが対応している単一項目だけで比較されています。
-Snowflake自身による評価である点は、割り引いて読んでください。
+評価はSnowflakeが自社のベンチマーク（11データセット）で実施したものです。
 
 - [What's new](https://docs.snowflake.com/en/release-notes/new-features)
 - [Nov 20, 2026: AI_EXTRACT accuracy](https://docs.snowflake.com/en/release-notes/2026/other/2026-11-20-ai-extract-accuracy)
