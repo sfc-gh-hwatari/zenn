@@ -1,5 +1,5 @@
 ---
-title: "Snowflake AI_EXTRACTのアップデート：精度改善・citation・FL_FILTER_PAGESを試す"
+title: "AI_EXTRACTのアップデート：精度改善・citation・FL_FILTER_PAGESをスキャンされた汚いPDFで試す"
 emoji: "📄"
 type: "tech"
 topics: ["snowflake", "ai", "llm", "aisql", "ocr"]
