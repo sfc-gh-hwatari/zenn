@@ -60,6 +60,19 @@ SQLの書き方を変える必要はありません。
 3種類の相対改善を平均すると17%です。
 リリースノートの12.8%とは、集計の仕方が異なると思われます。
 
+同じブログでは、他社のサービスとの比較も公開されています。
+同じ文書と同じ質問を各サービスに渡し、抽出の種類ごとに精度を比べたものです。
+
+| 抽出の種類 | Snowflake AI_EXTRACT | Databricks（Precision mode） | AWS Textract | Azure Document Intelligence |
+| --- | --- | --- | --- | --- |
+| 単一項目 | 0.95 | 0.88 | 0.54 | 0.30 |
+| リスト | 0.86 | 0.76 | 対象外 | 対象外 |
+| 表 | 0.93 | 0.87 | 対象外 | 対象外 |
+
+どの種類でも、AI_EXTRACTが最も高い精度でした。
+TextractとAzureは、APIが対応している単一項目だけで比較されています。
+Snowflake自身による評価である点は、割り引いて読んでください。
+
 - [What's new](https://docs.snowflake.com/en/release-notes/new-features)
 - [Nov 20, 2026: AI_EXTRACT accuracy](https://docs.snowflake.com/en/release-notes/2026/other/2026-11-20-ai-extract-accuracy)
 
