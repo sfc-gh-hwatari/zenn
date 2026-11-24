@@ -3,7 +3,7 @@ title: "汚れたスキャンPDFでも読める？SnowflakeのAI_EXTRACT関数�
 emoji: "📄"
 type: "tech"
 topics: ["snowflake", "ai", "llm", "aisql", "ocr"]
-published: false
+published: true
 publication_name: "snowflakejp"
 ---
 
@@ -47,7 +47,7 @@ OCRの設定も、帳票ごとのテンプレート作成も要りません。
 精度改善と1,000ページ対応は、クロスリージョン推論が有効なアカウントで適用されます。
 SQLの書き方を変える必要はありません。
 
-精度の内訳は、Snowflakeのエンジニアリングブログで公開されています。
+精度の内訳は、[Snowflakeのエンジニアリングブログ](https://docs.snowflake.com/en/release-notes/2026/other/2026-11-20-ai-extract-accuracy)で公開されています。
 11のデータセットで、旧エンジンとの比較が次のとおり示されています。
 
 | 抽出の種類 | 旧エンジン | 新エンジン |
@@ -56,22 +56,9 @@ SQLの書き方を変える必要はありません。
 | リスト | 0.73 | 0.86 |
 | 単一項目 | 0.86 | 0.95 |
 
-チェックボックスや手書きの多いフォームでは、リストの精度が0.52から0.82に上がっています。
-3種類の相対改善を平均すると17%です。
-リリースノートの12.8%とは、集計の仕方が異なると思われます。
+全体的に精度が上昇していることが示されています。これは期待できますね。
 
-同じブログでは、他社のサービスとの比較も公開されています。
-同じ文書と同じ質問を各サービスに渡し、抽出の種類ごとに精度を比べたものです。
-
-| 抽出の種類 | Snowflake AI_EXTRACT | Databricks（Precision mode） | AWS Textract | Azure Document Intelligence |
-| --- | --- | --- | --- | --- |
-| 単一項目 | 0.95 | 0.88 | 0.54 | 0.30 |
-| リスト | 0.86 | 0.76 | 対象外 | 対象外 |
-| 表 | 0.93 | 0.87 | 対象外 | 対象外 |
-
-どの種類でも、AI_EXTRACTが最も高い精度でした。
-TextractとAzureは、APIが対応している単一項目だけで比較されています。
-評価はSnowflakeが自社のベンチマーク（11データセット）で実施したものです。
+同じブログでは、他社のサービスとの比較も公開されています。良かったらご覧になってください。
 
 - [What's new](https://docs.snowflake.com/en/release-notes/new-features)
 - [Nov 20, 2026: AI_EXTRACT accuracy](https://docs.snowflake.com/en/release-notes/2026/other/2026-11-20-ai-extract-accuracy)
@@ -315,7 +302,7 @@ ORDER BY page, field;
 本来の行は折り目の線にかかっていました。値自体は正解です。
 
 :::message
-scoreが高いのに間違えた口座番号も、citationがあれば一瞬で確認できます。
+間違えた8%税額の行番号も、citationがあれば一瞬で確認できます。
 人は枠の場所だけ見ればいいので、全項目を目視する必要がなくなります。
 :::
 
