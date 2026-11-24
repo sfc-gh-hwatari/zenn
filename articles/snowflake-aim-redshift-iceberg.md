@@ -1,5 +1,5 @@
 ---
-title: "Snowflake AIMを使ってRedshiftからSnowflake storage for Iceberg™ tablesへの移行を試してみた"
+title: "Snowflake AIMでRedshiftからSnowflake storage for Iceberg™ tablesへ移行してみた"
 emoji: "❄️"
 type: "tech"
 topics: ["snowflake", "redshift", "iceberg", "aws", "datamigration"]
