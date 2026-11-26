@@ -77,11 +77,6 @@ https://docs.snowflake.com/en/migrations/aim-for-datawarehouses/quick-start
 
 移行対象の内訳は、スキーマ1件、テーブル8件、ビュー7件、ストアドプロシージャ6件、マクロ2件、ユーザー定義関数2件です。データは8テーブルで合計9,547行と小さく、移行の流れと変換の結果を確かめるための構成です。
 
-:::message
-画面は、同じTeradata環境に対して作成した2つのプロジェクトから撮っています。接続から移行セットアップまでは撮影用に作り直したプロジェクト（`Teradata_AIM_App`）、ダッシュボード以降は移行まで実行したプロジェクト（`SnowflakeAIM_Tera`）の画面です。
-
-:::
-
 ## AIMアプリでTeradataからの移行を進める
 
 ### 1. プロジェクトを作り、移行元にTeradataを選ぶ
